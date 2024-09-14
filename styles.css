@@ -1,0 +1,1179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: Prompt, sans-serif;
+
+}
+html{
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+
+:root {
+    --red:rgb(249, 109, 109);
+    --blue: rgb(0, 71, 153);
+}
+body header hr{
+    margin-top: 5px;
+    opacity: 0.4;
+}
+
+
+.back-to-top i{
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+
+    padding: 20px;
+    border-radius: 50%;
+
+    background-color: var(--red);
+    color: white;
+
+    z-index: 99;
+}
+
+
+
+
+
+header{
+
+    margin: 0 auto;
+
+
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+    z-index: 100;
+    
+
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 80%;
+    margin: 0 auto;   
+}
+
+.nav-left img{
+    width: 25%;
+    padding-top: 5px;
+}
+
+.nav-right ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-right li{
+    display: inline-block;
+}
+
+.nav-right a{
+    text-decoration: none;
+    font-family: Prompt, sans-serif;
+
+    color: var(--blue);
+
+    transition: all 0.1s;
+
+    border-bottom: 0px solid var(--blue);
+
+    font-size: 1em;
+    
+
+}
+
+.nav-right a:hover, .nav-right a:active{
+    color: var(--red);
+    border-bottom: 1px solid var(--blue);
+}
+
+
+.buttons-sidebar{
+    display: none;
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    font-size: 25px;
+    color: white;
+}
+
+
+
+.hamburger-btn::before{
+    display: none;
+}
+
+.hamburger-btn-nav{
+    width: 100%;
+    height: 50px;
+
+
+    position: absolute;
+    display: none;
+}
+
+.hamburger-btn-nav img{
+    width: 60px;
+    margin: 25px 0px 0px 25px;
+}
+
+/* Nav for mobile */
+
+
+.nav-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    position: fixed;
+
+
+    width: 50%;
+    right: 0;
+
+    height: 100vh;
+
+
+
+    background-color: rgba(249, 109, 109,0.4);
+    backdrop-filter: blur(10px);
+
+
+    color: white;
+}
+
+.nav-mobile .nav-left{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+.nav-mobile .nav-left, .nav-mobile .nav-right{
+    margin-left: 25px;
+}
+
+.nav-mobile img{
+    width: 80px;
+    
+    margin-top: 10px;
+}
+
+.nav-mobile .nav-left a{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+
+}
+
+
+.nav-mobile .nav-right ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+.nav-mobile .nav-right a{
+    color: white;
+}
+
+.nav-mobile .nav-right a:hover, .nav-mobile .nav-right a:active{
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid rgba(0, 71, 153, 0.8);
+}
+
+
+
+
+
+/* Main */
+
+
+
+
+
+.main-1{
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)),url(/meronepal/images/kathmandu-pic.png);
+    background-color: rgba(249, 109, 109, 0.3);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center;
+    
+}
+
+.sec-1{
+    width: 80%;
+    margin: 0 auto;
+
+    padding: 10% 0;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec-1-left{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: left;
+
+    color: white;
+}
+
+.sec-1-left h1{
+    font-size: 4rem;
+    position: relative;
+}
+.sec-1-left h1::after{
+    overflow:  visible;
+    content: " ";
+    height: 10px;
+    width: 10000px;
+
+    z-index: 1;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-color: var(--blue);
+    
+}
+
+.sec-1-left h2{
+    font-size: 2.5rem;
+}
+.sec-1-left p{
+    font-size: 1rem;
+}
+
+.sec-1-btn button{
+    border: none;
+    outline: none;
+
+    background-color: rgba(0, 71, 153,0.7);
+
+    padding: 12px 24px;
+    border-radius: 6px;
+
+    color: white;
+
+    margin-top: 10px;
+
+    transition: all 0.2s;
+
+
+}
+
+
+.sec-1-btn button:hover, .sec-1-btn button:active{
+    
+    background-color: rgba(0, 71, 153,0.9);
+    scale: 1.05;
+
+}
+
+
+.sec-1-right{
+    z-index: 2;
+}
+.sec-1-right img{
+    width: 20vw;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10rem 1rem rgba(0, 71, 153, 0.5);
+    transition: all 0.2s;
+}
+
+.sec-1-right img:hover{
+    box-shadow: 0px 0px 10rem 2rem rgba(0, 71, 153, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+/* Section 2 */
+
+.page-2{
+    height: 150px;
+    background-color: rgba(0, 71, 153, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+.page-2 div{
+    font-size: 1.5rem;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+.save-lives{
+    color: white;
+}
+.donate-now{
+    margin-top: -15px;
+    color:  rgba(249, 109, 109, 1);
+    transition: all 0.2s;
+}
+
+
+.page-2 button{
+    margin-left: 50px;
+    background-color: var(--red);
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+
+    transition: all 0.2s;
+}
+
+.page-2 button a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1.4px;
+    font-size: 1.3rem;
+
+    transition: all 0.2s;
+
+}
+.page-2 button:hover, .page-2 button:active{
+    background-color: rgba(0, 71, 153,1);
+    scale: 1.1;
+}
+
+.page-2 button:hover a, .page-2 button:active a{
+    letter-spacing: 3px;
+}
+
+
+
+/* Page 3 */
+
+.page-3{
+    background-image: linear-gradient(0deg, rgba(249, 109, 109, 0.2), rgba(0, 71, 153, 0.2));
+}
+
+.page-3 section{
+    width: 80%;
+    margin: 0 auto;
+
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+    gap: 100px;
+
+
+}
+.page-3-top{
+    display: flex;
+    flex-direction: column;
+
+    align-items: left;
+    justify-content: center;
+    
+    width: 50%;
+}
+
+.page-3-top h1{
+    font-size: 2.5rem;
+}
+
+.page-3-top h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.page-3-top a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+    display: inline-flex; 
+    align-items: center;  
+}
+
+.page-3-top a p{
+    
+    border-bottom: none;
+    transition: all 0.s;
+}
+
+
+.page-3-top a span {
+    display: inline-block; 
+    transition: margin-left 0.3s ease;
+    margin-left: 5px; 
+
+}
+
+
+.page-3-top a:hover span, .page-3-top a:active span {
+    margin-left: 15px;
+    color: var(--red);
+}
+
+.page-3-top p:hover a, .page-3-top p:active a{
+    color: var(--red);
+}
+
+
+
+
+
+.page-3-btm{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.page-3-btm div{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.page-3-btm h4{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+.page-3-btm div img{
+    width: 200px;
+}
+
+
+
+
+
+/* Page 4 */
+
+.pg-4{
+    all: revert;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(249, 109, 109, 0.2));
+}
+.page-4{
+    width: 80%;
+    margin: 0 auto;
+
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+ 
+}
+
+
+
+/* Slider Project Phulbari */
+
+.container{
+    width: 100%;
+    position: relative;
+
+    flex: 1;
+
+}
+
+.container .wrapper{
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    width: 100%;
+}
+
+.container .wrapper-holder{
+    display: flex;
+    height: 100%;
+    width: 400%;
+    animation: slider 28s ease-in-out infinite;
+}
+
+.container #slider-img-1,
+.container #slider-img-2,
+.container #slider-img-3,
+.container #slider-img-4 {
+    background-position: center;
+    background-size: cover;
+    width: 25%; 
+    height: 100%;
+}
+
+.container #slider-img-1{
+    background-image: url(/meronepal/images/New-folder/slider1img1.svg);
+}
+.container #slider-img-2{
+    background-image: url(/meronepal/images/New-folder/slider1img2.svg);
+}
+.container #slider-img-3{
+    background-image: url(/meronepal/images/New-folder/slider1img3.svg);
+}
+.container #slider-img-4{
+    background-image: url(/meronepal/images/New-folder/slider1img4.svg);
+}
+
+
+@keyframes slider{
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-75%); }
+}
+
+/* Page 4 text */
+
+.page-4-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.page-4-text h1{
+    font-size: 3rem;
+}
+.page-4-text p{
+    font-size: 1.1rem;
+}
+
+
+/* Page 5 */
+
+.pg-5{
+    background-color: rgba(230, 230, 230, 0.3);
+}
+
+.page-5{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin: 0 auto;
+
+    gap: 50px;
+
+    padding: 50px 0px;
+}
+
+.page-5-top{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+}
+
+.page-5-top img{
+    width: 100px;
+}
+
+
+.page-5-top h2{
+    font-size: 3rem;
+}
+
+
+.page-5-btm{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 100px;
+}
+
+.donor-box{
+    background-color: white;
+    padding: 20px;
+}
+.donor-leaderboard{
+    background-color: white;
+    padding: 20px;
+}
+
+
+
+/* Footer */
+footer{
+    padding: 30px;
+    padding-bottom: 50px;
+
+    background-color: rgb(128, 128, 128,0.3);
+}
+
+.footer{
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    width: 90%;
+
+    margin: 0 auto;
+
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+footer h2{
+    font-size: 1.5rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--blue);
+    transition: all 0.2s;
+
+    font-size: 1.2rem;
+
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+    width: fit-content;
+
+}
+
+
+
+footer a:hover, footer a:active{
+    color: var(--red);
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    font-family: Prompt, sans-serif;
+}
+
+.contact-us textarea{
+    min-width: 100%;
+    width: 100%;
+
+    min-height: 100px;
+    height: 100px;
+    max-height: 200px;
+
+    max-width:max-content;
+
+    padding: 7px 35px 7px 5px;
+
+}
+
+.contact-inputs{
+    border: none;
+    outline: none;
+
+    background-color: white;
+
+}
+
+footer form input{
+    padding: 7px 35px 7px 5px;
+
+}
+
+
+.footer-right button{
+    border: none;
+    outline: none;
+    background-color: var(--blue);
+    color: white;
+
+    padding: 10px 20px;
+
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+
+    transition: all 0.2s;
+}
+
+
+
+
+
+
+.footer-right button:hover, .footer-right button:active{
+    background-color: var(--red);
+    letter-spacing: 5px;
+}
+
+.footer-left, .footer-mid, .footer-right{
+    flex: 1;
+
+    min-width: 220px;
+}
+
+
+
+
+
+/* Media Quries */
+
+@media (max-width: 1024px) {
+
+    .sec-1{
+        padding: 15% 0;
+    }
+
+    .sec-1-left h1{
+        font-size: 3.5rem;
+    }
+    .sec-1-left h2{
+        font-size: 2rem;
+    }
+    .sec-1-left p{
+        font-size: 0.75rem;
+    }
+
+
+
+
+    .page-3 section{
+        gap: 50px;
+        padding: 50px 0px;
+    }
+
+
+    .page-3-top h1{
+        font-size: 2rem;
+    }
+    .page-3-top h3{
+        font-size: 1rem;
+    }
+    .page-3-top a {
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    .page-3-btm h4{
+        font-size: 1.2rem;
+    }
+    
+    .page-3-btm div img{
+        width: 150px;
+    }
+
+
+
+
+    .page-4{
+        align-items: center;
+    }
+    .container{
+        flex: 2;
+    }
+
+
+    .page-4-text h1{
+        font-size: 2.5rem;
+    }
+
+    .page-4-text p{
+        font-size: 1rem;
+    }
+    
+
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+
+    .nav-desktop{
+        display: none;
+    }
+    .nav-mobile{
+        display: none;
+    }
+
+    .buttons-sidebar{
+        display: block;
+    }
+    .hamburger-btn::before{
+        display: block;
+    }
+
+    .hamburger-btn-nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+
+
+    .sec-1-left h1::after{
+        display: none;
+    }
+    .sec-1-right img{
+        width: 30vw;
+    }
+    .sec-1-left h1{
+        font-size: 2.5rem;
+    }
+    .sec-1-left h2{
+        font-size: 1.5rem;
+    }
+    .sec-1-left p{
+        font-size: 0.9rem;
+    }
+
+
+
+    .page-2 div{
+        font-size: 1.2rem;
+    }
+    .page-2 button{
+        margin-left: 15px;
+    }
+
+
+
+    .page-3 section{
+        gap: 40px;
+        padding: 50px 0px;
+    }
+
+
+    .page-3-top h1{
+        font-size: 1.5rem;
+    }
+    .page-3-top h3{
+        font-size: 1rem;
+    }
+    .page-3-top a {
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    .page-3-btm h4{
+        font-size: 1.2rem;
+    }
+    
+    .page-3-btm div img{
+        width: 150px;
+    }
+
+
+    .page-4{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container{
+        flex: 1;
+    }
+    .page-4-text{
+        flex: 2;
+    }
+
+
+
+
+
+
+    
+    .page-5{
+        width: 90%;
+        gap: 25px;
+        padding: 25px 0px;
+    }
+
+    .page-5-btm{
+        scale: 0.9;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+
+    .sec-1{
+        padding: 20% 0;
+    }
+    .sec-1-left h1::after{
+        display: none;
+    }
+
+    .sec-1-left h1{
+        font-size: 8vw;
+    }
+    .sec-1-left h2{
+        font-size: 3vw;
+    }
+    .sec-1-left p{
+        font-size: 2vw;
+    }
+
+
+    .sec-1-btn button{
+        width: 70%;
+        margin-top: 5px;
+
+        font-size: 2.5vw;
+    }
+
+
+
+
+
+
+    .page-2{
+        height: 100px;
+        gap: 5px;
+    }
+    .page-2 div{
+        font-size: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+    
+    .page-3 section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-3-btm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .page-3-btm div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .page-3-top{
+        width: 90%;
+    }
+
+    .page-3 section{
+        gap: 40px;
+        padding: 50px 0px;
+    }
+
+
+    .page-3-top h1{
+        font-size: 2rem;
+    }
+    .page-3-top h3{
+        font-size: 1.25rem;
+    }
+    .page-3-top a {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    .page-3-btm h4{
+
+        padding-top: 15px;
+        font-size: 1.4rem;
+    }
+
+    .page-3-btm p{
+        font-size: 1.05rem;
+        max-width: 50vw;
+        text-align: center;
+    }
+    
+    .page-3-btm div img{
+        width: 150px;
+    }
+
+}
+
+/* Mobile L */
+@media (max-width: 425px){
+
+
+    .sec-1{
+        width: 95%;
+        margin: 0 auto;
+        padding: 30% 0;
+
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .sec-1-right img{
+        display: block;
+        width: 200px;
+    }
+
+    .sec-1-left{
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .sec-1-left h1{
+        font-size: 3.2rem;
+        text-align: center;
+        text-decoration: underline rgba(0, 71, 153, 0.9) 5px;
+    }
+    .sec-1-left h2{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .sec-1-left p{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+
+    .sec-1-btn button{
+       width: 100%;
+       font-size: 1rem;
+       margin-top: 10px;
+    }
+
+
+    .page-2{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+    .donate-now{
+        display: none;
+    }
+    .page-2 div{
+        font-size: 1.2rem;
+    }
+
+
+    .page-4-text h1{
+        font-size: 2.2rem;
+    }
+
+    .page-4-text p{
+        font-size: 0.9rem;
+    }
+
+    .page-5-top{
+        scale: 0.8;
+        gap: 25px;
+    }
+
+
+    .page-5-btm{
+        gap: 50px;
+    }
+
+
+}
+/* Mobile M */
+@media (max-width: 375){
+    .page-2 div{
+      font-size: 1rem;  
+    }
+    
+}
+
+/* Mobile S */
+@media (max-width: 320) {
+    
+    .page-5-top{
+        gap: 100px;
+    }
+}
+
+
+
+
+
+

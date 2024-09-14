@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeroNepal</title>
+    <link rel="stylesheet" href="/meronepal/styles.css">
+    <link rel="icon" href="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="icon" href="/meronepal/images/logo2.png">
+</head>
+<body>
+    <div class="back-to-top"> <a href="#header"><i class="fa-solid fa-arrow-up"></i></a></div>
+    <header>
+        <nav class="nav-desktop">
+            <div class="nav-left">
+                <a href= "/meronepal/index.html"><img src="/meronepal/images/logo2.png" alt=""></a>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="/meronepal/about-us.html">About Us</a></li>
+                    <li><a href="/meoronepal/#footer">Contact Us</a></li>
+                    <li><a href="/meronepal/index.html#donate">Donate Now</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hamburger-btn-nav">
+            <a href="#header" class="logo-hamburger"><img src="/meronepal/images/logo2.png" alt=""></a>
+            <i onclick="showSidebar()" class="fa-solid fa-bars hamburger-btn buttons-sidebar" ></i>
+        </div>
+        <nav class="nav-mobile sidebar">
+            <div class="nav-left">
+                <a href="#header"><img src="/meronepal/images/logo2.png" alt=""></a>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="/meronepal/about-us.html">About Us</a></li>
+                    <li><a href="/meronepal/index.html#footer">Contact Us</a></li>
+                    <li><a href="/meronepal/index.html#donate">Donate Now</a></li>
+                </ul>
+            </div>
+            <i onclick="hideSidebar()" class="fa-solid fa-xmark x-btn buttons-sidebar" ></i>
+        </nav>        
+    </header>
+
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'block'
+
+            const img = document.querySelector('.logo-hamburger')
+            img.style.display = "none"
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display= 'none'
+
+            const img = document.querySelector('.logo-hamburger')
+            img.style.display = "block"
+        }
+    </script>
+
+    <main class="main-1" id="header">
+        <section class="sec-1">
+            <div class="sec-1-left">
+                <h1>
+                    MeroNepal
+                </h1>
+                <h2>
+                    Help a Kid in Need
+                </h2>
+                <p>
+                    युवा संग नेपालको भविष्य: सपना बनाउँदै, साथ चलौं
+                </p>
+                <div class="sec-1-btn">
+                    <a href="/meronepal/index.html#donate"><button>Donate</button></a>
+                    <a href="/meronepal/more-information.html"><button>More Information</button></a>
+                </div>
+            </div>
+            <div class="sec-1-right">
+                <img src="/meronepal/images/circle-cover-image.png" alt="">
+            </div>
+        </section>
+    </main> 
+
+    <main class="main-2">
+        <section class="page-2">
+            <div>
+                <h2 class="save-lives">Help The Unfortunate</h2>
+                <h2 class="donate-now">Donate Now.</h2>   
+            </div>
+            <button><a href="/meronepal/index.html#donate">DONATE</a>
+            </button>
+        </section>
+
+
+
+
+
+        <section class="page-3">
+            <section>
+                <div class="page-3-top">
+                    <h1> WHAT WE DO</h1>
+                    <h3>Mero Nepal NPO aims to provide educational support to children who do not have access to quality schooling.</h3>
+                    <p><a href="about-us.html"> About us<span>&#8594</span></a></p>
+                </div>
+                <div class="page-3-btm">
+                    <div>
+                        <img src="/meronepal/images/schoolsupplies-img.svg" alt="school supplies icon">
+                        <h4>Provide Necessities</h4>
+                        <p>Sending School supplies to students that live in rual places inside nepal</p>
+                    </div>
+                    <div>
+                        <img src="/meronepal/images/fundraisers-img.svg" alt="school supplies icon">
+                        <h4>Fundraisers</h4>
+                        <p>We host local fundrasiers such as painting to raise money.</p>
+                    </div>
+                    <div>
+                        <img src="/meronepal/images/educate-img.svg" alt="school supplies icon">
+                        <h4>Educate others</h4>
+                        <p>We educate the privelegeed on the struggles of others </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+
+
+        <section class="pg-4">
+            <section class="page-4">
+                <section id="slider-section" class="container">
+                    <div class="wrapper">
+                        <div class="wrapper-holder">
+                            <div id="slider-img-1"></div>
+                            <div id="slider-img-2"></div>
+                            <div id="slider-img-3"></div>   
+                            <div id="slider-img-4"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page-4-text">
+                    <h1>Project Phulbari</h1>
+                    <p>Project phulbari was an introductory project made possible by the support of our members and our officer team. We want to show everyone that we are dedicated and so, the officer team collected 300$ from their own accounts to provide stationary, kitchen aid, and school supplies to a group of children living in an orphanage.</p>
+                </section>
+            </section>
+        </section>
+        <section  id="donate" class="pg-5" > 
+            <section class="page-5">
+                <div class="page-5-top">
+                    <img src="/meronepal/images/logo2.png" alt="">
+                    <h2 >MeroNepal</h2>
+                </div>
+                <div class="page-5-btm">
+                    <div class="donor-box"> 
+                        <!--Donate Box DonorBox-->
+                        <script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe src="https://donorbox.org/embed/mero-nepal?default_interval=o" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 310px; max-height:none!important" allow="payment"></iframe>
+                        <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
+                    </div>
+                    <div class="donor-leaderboard">
+                        <iframe frameborder="0" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/mero-nepal?donor_wall_color=%235a6fba&amp;only_donor_wall=true" style="width: 100%; max-width:500px; min-width:310px; min-height: 345px;"></iframe>
+                    </div>
+                </div>
+            </section>
+         </section>
+    </main>
+
+    <footer id="footer">
+        <section class="footer">
+            <div class="footer-left">
+                <div>
+                    <h2>Learn More</h2>
+                    <a href="/meronepal/about-us.html"><p>About Us</p></a>
+                    <a href="/meronepal/more-information.html"><p>More Information</p></a>
+                </div>
+                <div>
+                    <h2>Make a Change</h2>
+                    <a href="/meronepal/index.html/#donate">Donate Now</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnQHuqvaoKQxrVYciBfGXRogk5LGtPO957WgeAHCwpciVgQg/viewform" target="_blank">Join MeroNepal</a>
+                </div>
+            </div>
+            <div class="footer-mid">
+                <div>
+                    <h2>Connect With Us</h2>
+                    <a href="https://www.instagram.com/mero.nepal_" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                    <a href="https://www.facebook.com/people/Mero-Nepal/61557388315440/" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                    <a href="https://linktr.ee/MeroNepalNPO" target="_blank"><i class="fas fa-link"></i>Linktree</a>
+                    <a href="" target="_blank"><i class="fa-solid fa-phone" ></i>Phone Number</a>
+                    <a href="" target="_blank"><i class="fa-solid fa-envelope"></i>Email</a>
+                    <a href="https://donorbox.org/mero-nepal" target="_blank"><i class="fa-solid fa-circle-dollar-to-slot"></i>Donorbox Page</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div>
+                    <h2>Contact MeroNepal</h2>
+                    <form action="" class="contact-us">
+                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                        <input type="emai" name="email" placeholder="Your Email" class="contact-inputs" required>
+                        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+    
+</body>
+</html>
