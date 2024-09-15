@@ -226,7 +226,7 @@ header nav{
     justify-content: center;
 
     font-size: 2rem;
-
+    margin-top: 100px;
     margin-bottom: 50px;
 }
 
@@ -506,7 +506,10 @@ footer form input{
 }
 
 
-@media (max-width: 425){
+@media (max-width: 500){
+    .sec-1 h1{
+        font-size: 1.7rem;
+    }
     .sec-2, main div{
         width: 85%;
     }
