@@ -18,7 +18,17 @@
 
 </head>
 <body>
-    <div class="back-to-top"> <a href="#header"><i class="fa-solid fa-arrow-up"></i></a></div>
+    <div id="scrollToTop" class="back-to-top"> <a href="#header"><i class="fa-solid fa-arrow-up"></i></a></div>
+    <script>
+        window.onscroll = function() {
+            const scrollToTopButton = document.getElementById("scrollToTop");
+            if (window.scrollY > 100) {  // Show the button after scrolling 100px down
+            scrollToTopButton.style.display = "block";
+            } else {
+            scrollToTopButton.style.display = "none";  // Hide the button when near the top
+            }
+        };
+    </script>
     <header id="header">
         <nav class="nav-desktop">
             <div class="nav-left">
@@ -141,6 +151,15 @@
                 </div>
             </div>
 
+        </section>
+        <section class="small-footer">
+            <p class="footer-1">
+                &copy MeroNepal 2024. All rights reserved.
+            </p>
+
+            <p class="footer-2">    
+                Designed and developed by Ashmit Bohora
+            </p>
         </section>
     </footer>
 </body>
