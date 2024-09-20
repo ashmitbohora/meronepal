@@ -23,7 +23,9 @@ body header hr{
     opacity: 0.4;
 }
 
-
+.back-to-top{
+    display: none;
+}
 .back-to-top i{
     position: fixed;
     bottom: 5%;
@@ -36,6 +38,7 @@ body header hr{
     color: white;
 
     z-index: 99;
+    
 }
 
 
@@ -150,6 +153,7 @@ header nav{
 
 
     background-color: rgba(249, 109, 109,1);
+    backdrop-filter: blur(10px);
 
 
     color: white;
@@ -642,8 +646,7 @@ header nav{
 
 /* Footer */
 footer{
-    padding: 30px;
-    padding-bottom: 50px;
+    padding-top: 30px;
 
     background-color: rgb(128, 128, 128,0.3);
 }
@@ -660,6 +663,8 @@ footer{
 
     gap: 20px;
     flex-wrap: wrap;
+
+    padding-bottom: 50px;
 
 }
 
@@ -766,6 +771,27 @@ footer form input{
     min-width: 220px;
 }
 
+
+
+.small-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.8rem;
+
+    background-color: darkgray;
+    padding: 20px 0;
+}
+
+.footer-1{
+    flex: 1;
+}
+
+.footer-2{
+    flex: 1;
+}
 
 
 
@@ -1170,7 +1196,6 @@ footer form input{
         gap: 100px;
     }
 }
-
 
 
 
