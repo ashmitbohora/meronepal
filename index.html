@@ -19,16 +19,7 @@
 </head>
 <body>
     <div id="scrollToTop" class="back-to-top"> <a href="#header"><i class="fa-solid fa-arrow-up"></i></a></div>
-    <script>
-        window.onscroll = function() {
-            const scrollToTopButton = document.getElementById("scrollToTop");
-            if (window.scrollY > 100) {
-            scrollToTopButton.style.display = "block";
-            } else {
-            scrollToTopButton.style.display = "none";  
-            }
-        };
-    </script>
+
     <header>
         <nav class="nav-desktop">
             <div class="nav-left">
@@ -62,23 +53,7 @@
     </header>
 
 
-    <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'block'
 
-            const img = document.querySelector('.logo-hamburger')
-            img.style.display = "none"
-        }
-
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display= 'none'
-
-            const img = document.querySelector('.logo-hamburger')
-            img.style.display = "block"
-        }
-    </script>
 
     <main class="main-1" id="header">
         <section class="sec-1">
@@ -234,5 +209,36 @@
             </p>
         </section>
     </footer>
+
+
+
+    <script>
+        window.onscroll = function() {
+            const scrollToTopButton = document.getElementById("scrollToTop");
+            if (window.scrollY > 100) {
+            scrollToTopButton.style.display = "block";
+            } else {
+            scrollToTopButton.style.display = "none";  
+            }
+        };
+    </script>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'block'
+
+            const img = document.querySelector('.logo-hamburger')
+            img.style.display = "none"
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display= 'none'
+
+            const img = document.querySelector('.logo-hamburger')
+            img.style.display = "block"
+        }
+    </script>
 </body>
 </html>
