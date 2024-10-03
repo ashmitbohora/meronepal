@@ -20,55 +20,6 @@
 <body>
     <div id="scrollToTop" class="back-to-top"> <a href="#header"><i class="fa-solid fa-arrow-up"></i></a></div>
     
-    <!--Loading Screen-->
-    <div class="loader">
-        
-    </div>
-    <style>
-        .loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgb(0, 71, 153);
-            z-index: 100;
-            transition: all 0.75s;
-        }
-
-
-        .loader--hidden{
-            opacity: 0;
-            visibility: hidden;
-        }
-
-
-        .loader::after{
-            content: "";
-            width: 75px;
-            height: 75px;
-            border: 15px solid white;
-            border-top-color: #f96d6d;
-            border-radius: 50%;
-            animation: loading 0.75s ease infinite;
-        }
-
-        @keyframes loading{
-            from{transform: rotate(0turn);}
-            to{transform: rotate(1turn);}
-        }
-
-
-
-    </style>
-    <script>
-        window.addEventListener("load", () => {
-            document.querySelector(".loader").classList.add("loader--hidden");
-        });
-    </script>
     <header>
         <nav class="nav-desktop">
             <div class="nav-left">
@@ -88,7 +39,7 @@
         </div>
         <nav class="nav-mobile sidebar">
             <div class="nav-left">
-                <a href="#header"><img src="images/logo2.png" alt="MeroNepal Logo"></a>
+                <a href="index.html#header"><img src="images/logo2.png" alt="MeroNepal Logo"></a>
             </div>
             <div class="nav-right">
                 <ul>
@@ -289,5 +240,57 @@
             img.style.display = "block"
         }
     </script>
+
+
+    
+    <!--Loading Screen-->
+    <div class="loader">
+        
+    </div>
+    <style>
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0, 71, 153);
+            z-index: 100;
+            transition: all 0.75s;
+        }
+
+
+        .loader--hidden{
+            opacity: 0;
+            visibility: hidden;
+        }
+
+
+        .loader::after{
+            content: "";
+            width: 75px;
+            height: 75px;
+            border: 15px solid white;
+            border-top-color: #f96d6d;
+            border-radius: 50%;
+            animation: loading 0.75s ease infinite;
+        }
+
+        @keyframes loading{
+            from{transform: rotate(0turn);}
+            to{transform: rotate(1turn);}
+        }
+
+
+
+    </style>
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".loader").classList.add("loader--hidden");
+        });
+    </script> 
 </body>
 </html>
